@@ -15,6 +15,9 @@ builder.Services.AddDbContext<FlowerStoreContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("FlowerStore"));
 });
 
+//Add cors
+builder.Services.AddCors();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -22,6 +25,14 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    //add Cors
+    app.UseCors(builder =>
+    {
+        builder.AllowAnyOrigin() //cho phep truy cap bat ky
+                .AllowAnyMethod() //cho phep method
+                .AllowAnyHeader();//cho phep tieu de
+    });
 }
 
 app.UseHttpsRedirection();
