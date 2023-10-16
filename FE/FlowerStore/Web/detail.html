@@ -1,186 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Details</title>
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/details/body-top.css">
+    <link rel="stylesheet" href="css/details/body-bottom.css">
     <link rel="stylesheet" href="css/footer.css" />
     <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Montserrat"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script
-    src="https://kit.fontawesome.com/fbda8849fb.js"
-    crossorigin="anonymous"
-  ></script>
-</head>
-<body>
-    <!-- Header  -->
-    <header>
-        <nav class="header">
-          <input type="checkbox" id="check" />
-          <label for="check" class="header-menu">
-            <i class="fas fa-bars"></i>
-          </label>
-          <div class="header-logo">
-            <img src="imgs/logo.svg" alt="" />
-          </div>
-          <div class="header-bgTitle"></div>
-          <div class="header-title">
-            <div class="scroll">
-              <ul class="list-title">
-                <li class="list-item">
-                  <a class="item-title" href="">HOME</a>
-                </li>
-                <li class="list-item">
-                  <div class="dropdown">
-                    <a class="item-title" href="">COLLECTIONS</a>
-                    <i class="fas fa-chevron-right dropdown-btn"></i>
-                  </div>
-                  <div class="dropdown-list">
-                    <ul>
-                      <li id=""><a href="">ITEM1</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="list-item ">
-                  <div class="dropdown">
-                    <a class="item-title" href="">SERVICES</a>
-                    <i class="fas fa-chevron-right dropdown-btn"></i>
-                  </div>
-                  <div class="dropdown-list">
-                    <ul>
-                      <li id=""><a href="">ITEM1</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <a class="item-title" href="">DEALS</a>
-                </li>
-                <li class="list-item">
-                  <a class="item-title" href="">NEWS</a>
-                </li>
-                <li class="list-item">
-                  <a class="item-title" href="">CONTACT</a>
-                </li>
-                <li class="mobile-item">
-                  <a class="item-title" href="">LOGIN</a>
-                </li>
-                <li class="mobile-item">
-                  <a class="item-title" href="">ACCOUNT</a>
-                </li>
-                <li class="mobile-item">
-                  <a class="item-title" href="">LOGOUT</a>
-                </li>
-                <li class="line"></li>
-              </ul>
-            </div>
-          </div>
-          <div class="header-icon">
-            <ul class="list-icon">
-              <li class="search-icon">
-                <img src="imgs/icons/search.svg" alt="" />
-              </li>
-              <li class="cart-icon">
-                <img src="imgs/icons/cart.svg" alt="" />
-              </li>
-              <li class="heart-icon">
-                <img src="imgs/icons/heart.svg" alt="" />
-              </li>
-              <li class="profile-icon">
-                <img src="imgs/icons/profile.svg" alt="" />
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fbda8849fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/commonLayout.js"></script>
+    <script src="js/loadSetting.js"></script>
+  </head>
+  <body>
 
-      <div class="body">
-        <div class="body-top">
-            <div class="top-left">
-                <img src="imgs/body/body-services/services.svg" alt="">
+    <header>
+    </header>
+
+    <!-- Body -->
+    <div id="body" class="body">
+
+      <!-- Body top -->
+      <div class="body-top">
+        <div class="top-left">
+          <img src="imgs/body/body-products/flower1.png" alt="" />
+        </div>
+        <div class="top-right">
+          <div class="content">
+            <div class="content-title">
+              <h1>OHARA ROSE</h1>
             </div>
-            <div class="top-right">
-                <div>
+            <div class="content-price">$36.00</div>
+            <hr />
+            <div class="content-details">
+              <span>Design details:</span>
+            </div>
+            <div class="content-info">
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernaturaut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                dolorem.
+              </p>
+            </div>
+            <div class="content-quantity">
+                <div class="quantity-title">
+                    <span>Quantity:</span>
+                </div>
+                <div class="quantity-change">
+                    <input type="text" value="1">
+                    <button type="button" class="btn-increase">+</button>
+                    <button type="button" class="btn-decrease">-</button>
                 </div>
             </div>
+            <div class="content-btn">
+                <button class="btn-add">ADD TO CARD</button>
+                <button class="btn-order">ORDER NOW</button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Footer -->
-      <footer>
-        <div class="footer">
-          <!-- Footer top -->
-          <div class="footer-top">
-            <!-- Footer top left -->
-            <div class="top-left">
-              <div class="footer-logo">
-                <img src="imgs/logo.svg" alt="" />
-              </div>
-              <div class="footer-text">
-                <p>
-                  Providing online flower delivery service. With more than 200+
-                  beautiful and luxurious flower bouquets as gifts for many
-                  special occasions of the year.
-                </p>
-              </div>
-            </div>
-  
-            <!-- Footer top right -->
-            <div class="top-right">
-              <div class="footer-col1">
-                <h5>Mobile app</h5>
-                <ul>
-                  <li>Features</li>
-                  <li>Live share</li>
-                  <li>Video record</li>
-                </ul>
-              </div>
-  
-              <div class="footer-col2">
-                <h5>Community</h5>
-                <ul>
-                  <li>Featured artists</li>
-                  <li>The Portal</li>
-                  <li>Live events</li>
-                </ul>
-              </div>
-  
-              <div class="footer-col3">
-                <h5>Company</h5>
-                <ul>
-                  <li><a href="">About us</a></li>
-                  <li><a href="">Contact us</a></li>
-                  <li><a href="">History</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-  
-          <hr class="footer-line" />
-  
-          <div class="footer-bot">
-            <div class="footer-copy">
-              <span>Copyright &copy; 2023. All rights reserved</span>
-            </div>
-  
-            <div class="footer-social">
-              <span>Follow us: </span>
-              <div class="social-facebook">
-                <img src="imgs/icons/facebook.svg" alt="" />
-              </div>
-              <div class="social-instagram">
-                <img src="imgs/icons/instagram.svg" alt="" />
-              </div>
-              <div class="social-twitter">
-                <img src="imgs/icons/twitter.svg" alt="" />
-              </div>
-            </div>
-          </div>
+      <!-- Body bottom -->
+      <div class="body-bottom">
+        <div class="bottom-title">
+          <h1>OTHER PRODUCTS</h1>
         </div>
-      </footer>
+        <div class="bottom-content">
 
-      <script src="js/header.js"></script>
-</body>
+          <div class="card">
+            <div class="card-img">
+              <img src="imgs/body/body-products/flower1.png" alt="">
+            </div>
+            <div class="card-body">
+            <div class="card-title">
+              <h4>LOREM IPSUM DOLOR</h4>
+            </div>
+            <div class="card-content">
+              <div class="card-price">$ 27.00</div>
+              <div class="card-heart">
+                <img src="imgs/icons/heart.svg" alt="">
+              </div>
+            </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-img">
+              <img src="imgs/body/body-products/flower1.png" alt="">
+            </div>
+            <div class="card-body">
+            <div class="card-title">
+              <h4>LOREM IPSUM DOLOR</h4>
+            </div>
+            <div class="card-content">
+              <div class="card-price">$ 27.00</div>
+              <div class="card-heart">
+                <img src="imgs/icons/heart.svg" alt="">
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="imgs/body/body-products/flower1.png" alt="">
+            </div>
+            <div class="card-body">
+            <div class="card-title">
+              <h4>LOREM IPSUM DOLOR</h4>
+            </div>
+            <div class="card-content">
+              <div class="card-price">$ 27.00</div>
+              <div class="card-heart">
+                <img src="imgs/icons/heart.svg" alt="">
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="imgs/body/body-products/flower1.png" alt="">
+            </div>
+            <div class="card-body">
+            <div class="card-title">
+              <h4>LOREM IPSUM DOLOR</h4>
+            </div>
+            <div class="card-content">
+              <div class="card-price">$ 27.00</div>
+              <div class="card-heart">
+                <img src="imgs/icons/heart.svg" alt="">
+              </div>
+            </div>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+
+    <footer></footer>
+  </body>
 </html>
